@@ -26,7 +26,7 @@ Section	Description
 
 Python 3.x
 
-pandas, yfinance, plotly, matplotlib
+pandas, yfinance, plotly, matplotlib.
 
 Jupyter Notebook
 
