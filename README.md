@@ -1,39 +1,70 @@
-📊 Tesla & GameStop Financial Analysis
+# Tesla and GameStop Financial Analysis
 
-A data science project using Python and yfinance to extract, clean, and visualize stock and revenue data for Tesla (TSLA) and GameStop (GME).
-Includes interactive dashboards built with Plotly.
+Exploratory financial analysis project comparing Tesla (TSLA) and GameStop (GME) stock prices and revenue trends.
 
-🚀 Objectives
+## Problem Statement
 
-Extract stock and financial data using yfinance
+The goal is to collect stock-price and revenue data, clean it into analysis-ready tables, and create visual comparisons that make financial trends easier to understand.
 
-Clean and organize data with pandas
+## Why This Project Matters
 
-Create interactive dashboards comparing Tesla and GameStop
+This project demonstrates early data analyst skills: acquiring data from APIs and web pages, cleaning tabular data, and using visualizations to communicate trend differences between two public companies.
 
-Present insights on trends and performance
+## Key Features
 
-🧩 Project Contents
-Section	Description
-1	Fetch Tesla stock data
-2	Extract Tesla revenue
-3	Fetch GameStop stock data
-4	Extract GameStop revenue
-5	Build Tesla dashboard
-6	Build GameStop dashboard
-7	Document and export notebook
-⚙️ Tools Used
+- Pulls historical stock data with `yfinance`.
+- Scrapes quarterly revenue data from Macrotrends pages.
+- Cleans date and revenue columns for analysis.
+- Creates Plotly visualizations for stock and revenue comparison.
 
-Python 3.x
+## Tech Stack
 
-pandas, yfinance, plotly, matplotlib.
+- Python
+- pandas
+- yfinance
+- requests and BeautifulSoup
+- Plotly
+- Jupyter Notebook
 
-Jupyter Notebook
+## Project Structure
 
-📈 Outputs
+```text
+.
+├── stock.ipynb
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
 
-Two dashboards: Tesla and GameStop
+## Setup
 
-Cleaned and labeled DataFrames
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook
+```
 
-Markdown explanations for each step
+## Usage
+
+Open `stock.ipynb` and run all cells. Because the notebook fetches live financial data and scrapes public web pages, results can change over time and web scraping cells may need selector updates if the source page changes.
+
+## Portfolio Status
+
+This is a learning/practice project and should not be pinned ahead of stronger projects. To make it recruiter-ready, add:
+
+- A final insight section with 3-5 business observations.
+- Saved chart screenshots or exported HTML charts.
+- Clear data-source limitations.
+- A reproducible run date and package versions.
+
+## Future Improvements
+
+- Replace fragile scraping with a more stable data source where possible.
+- Add automated checks for empty revenue tables.
+- Export visualizations to a `figures/` or `outputs/` folder.
+- Compare against broader market benchmarks.
+
+## Author
+
+Maurice Leonard Okurut
